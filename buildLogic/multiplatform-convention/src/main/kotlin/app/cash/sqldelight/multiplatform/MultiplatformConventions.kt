@@ -67,6 +67,7 @@ class MultiplatformConventions : Plugin<Project> {
       androidNativeX64()
       mingwX64()
       watchosDeviceArm64()
+      ohosArm64()
 
       // linking fails for the linux test build if not built on a linux host
       // ensure the tests and linking for them is only done on linux hosts

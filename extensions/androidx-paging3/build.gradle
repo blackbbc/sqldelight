@@ -29,6 +29,7 @@ kotlin {
         api projects.runtime
         api libs.app.cash.paging.common
         implementation libs.kotlin.coroutines.core
+        implementation libs.atomicFu
       }
     }
     commonTest {

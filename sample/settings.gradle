@@ -13,6 +13,9 @@ pluginManagement {
     maven { url 'https://www.jetbrains.com/intellij-repository/releases' }
     maven { url "https://cache-redirector.jetbrains.com/intellij-dependencies" }
     maven { url "../build/localMaven" }
+    maven { url "https://mirrors.tencent.com/nexus/repository/maven-tencent" }
+    maven { url "https://mirrors.tencent.com/nexus/repository/maven-public" }
+    mavenLocal()
   }
 }
 
@@ -42,6 +45,9 @@ dependencyResolutionManagement {
     mavenCentral()
     google()
     maven { url "../build/localMaven" }
+    maven { url "https://mirrors.tencent.com/nexus/repository/maven-tencent" }
+    maven { url "https://mirrors.tencent.com/nexus/repository/maven-public" }
+    mavenLocal()
   }
 }
 

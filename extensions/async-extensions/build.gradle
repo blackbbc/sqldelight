@@ -3,7 +3,7 @@ plugins {
   alias(libs.plugins.dokka)
   id("app.cash.sqldelight.multiplatform")
   id("app.cash.sqldelight.toolchain.runtime")
-  alias(libs.plugins.binaryCompatibilityValidator)
+//  alias(libs.plugins.binaryCompatibilityValidator)
 }
 
 archivesBaseName = 'sqldelight-async-extensions'
@@ -22,6 +22,7 @@ kotlin {
     commonMain {
       dependencies {
         implementation projects.runtime
+        implementation libs.atomicFu
         api libs.kotlin.coroutines.core
       }
     }

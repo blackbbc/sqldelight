@@ -26,6 +26,8 @@ kotlin {
   tvosArm64()
   iosArm64()
 
+  ohosArm64()
+
   // tier 3
   // https://github.com/touchlab/SQLiter/issues/117
   // androidNativeArm32()
@@ -43,6 +45,7 @@ kotlin {
           it.group("apple") { }
           // https://github.com/touchlab/SQLiter/issues/117
           // it.group("androidNative")
+          it.withOhosArm64()
         }
       }
     }

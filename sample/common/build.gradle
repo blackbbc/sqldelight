@@ -24,6 +24,7 @@ kotlin {
   // Configure common.
   sourceSets.commonMain.dependencies {
     implementation 'app.cash.sqldelight:primitive-adapters'
+    implementation libs.atomicFu
   }
   sourceSets.commonTest.dependencies {
     implementation 'org.jetbrains.kotlin:kotlin-test'
